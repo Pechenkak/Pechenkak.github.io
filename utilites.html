@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Современный сайт</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styleTable.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <p class="logo">👍</p>
+    </div> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Главная</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active custom-services" aria-current="page" href="utilites.html">Услуги</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle custom-semesters" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Семестры
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="semester1.html">1 семестр</a></li>
+                <li><a class="dropdown-item" href="semester2.html">2 семестр</a></li>
+                <li><a class="dropdown-item" href="task13.html">Практики</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Поиск</button>
+          </form>
+        </div>
+      </div>
+      <button id="authButton" class="btn custom-semesters">Авторизация</button>
+    </nav>
+    <div class="header-right">Привет, user!</div>
+  </header>
+
+  <div class="productBox">
+    <main>
+
+      
+      <section class="intro">
+        <h1>Здесь я решил продавать свой хлеб.</h1>
+        <p>Меня зовут Витонтев Олег Вячеславович, и я начинающий специалист по веб-разработке и продаже хлеба</p>
+      </br>
+        <h2>1 карточка товара</h2>
+        <p>Ржано́й хлеб (чёрный хлеб) — хлеб из ржаной муки (обойной, обдирной или сеяной[1]). 
+          Распространён на русском Севере и в средней полосе России[2], Белоруссии, Латвии, Литве, Германии, 
+          Финляндии, Норвегии, Швеции, Дании, Польше[3], Украине, Франции, Чехии.</p>
+      </br>
+      <h2>2 карточка товара</h2>
+      <p>Хлеб — пищевой продукт, получаемый при выпечке теста, приготовленного как минимум из муки и воды, 
+        разрыхлённого пекарскими дрожжами или закваской[2]. Рецептура хлеба часто содержит соль, сахар и жиры. 
+        Cловом «хлеб» часто называют сельскохозяйственные культуры, а также само зерно этих культур и изготовляемую 
+        из него муку, используемую для выпечки[3].</p>
+      </br>
+      <h2>3 карточка товара</h2>
+          <p>Хле́бные зерновы́е культу́ры, или хлеба́, — группа растений, возделываемых ради зерна, которое употребляется в пищу. 
+            Относятся к семействам злаковые, гречишные и амарантовые.
+            Хлебные зерновые культуры вместе с зернобобовыми составляют группу зерновых культур. 
+            Большинство хлебных культур относятся к семейству злаковых. Не относящиеся к злакам растения 
+            (например, гречиха) могут рассматриваться как псевдозерновые, или злакоподобные. Часть хлебных 
+            зерновых культур, как злаковых, так и прочих, а также часть зернобобовых культур, зерно которых
+            как правило используется для производства крупы, относят к крупяным культурам.</p>
+      </section>
+
+
+      <!-- Продукты -->
+      <section class="products">
+        <div class="product-card">
+          <img src="image\product1.jpg" alt="Товар 1">
+          <h3>Товар 1</h3>
+          <button class="order-btn" onclick="openOrderModal()">Заказать</button>
+        </div>
+        <div class="product-card">
+          <img src="image\product2.jpg" alt="Товар 2">
+          <h3>Товар 2</h3>
+          <button class="order-btn" onclick="openOrderModal()">Заказать</button>
+        </div>
+        <div class="product-card">
+          <img src="image\product3.jpg" alt="Товар 3">
+          <h3>Товар 3</h3>
+          <button class="order-btn" onclick="openOrderModal()">Заказать</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Все права защищены. Витютнев Олег Вячеславович</p>
+  </footer>
+
+  <!-- Модальное окно для заказа -->
+  <div id="orderModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeOrderModal()">&times;</span>
+      <h2>Введите ваши данные</h2>
+      <form id="orderForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" required>
+        
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" required>
+        
+        <label for="address">Адрес:</label>
+        <textarea id="address" required></textarea>
+        
+        <button type="submit">Отправить заказ</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Модальное окно для авторизации -->
+  <div id="authModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeAuthModal()">&times;</span>
+      <h2>Авторизация</h2>
+      <form id="authForm">
+        <label for="username">Логин:</label>
+        <input type="text" id="username" required>
+        
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" required>
+        
+        <button type="submit">Войти</button>
+      </form>
+    </div>
+  </div>
+  <script src="script/code.js"></script>
+  <script src="script/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
